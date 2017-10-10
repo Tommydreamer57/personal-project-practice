@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './reset.css';
 import './App.css';
-import './App.scss';
 
 class App extends Component {
   constructor(props) {
@@ -31,15 +30,18 @@ class App extends Component {
     return (
       <div>
         <div className='main'>
+
           <div className='white-box titlebox'>
-            <h1 id='header'>Tommydreamer57</h1>
+            <h1 id='header'>Website Title</h1>
           </div>
+
           <div className='white-box'>
             <div onClick={() => this.navigation()} className={this.state.navigation ? 'navigationbuttonbox' : 'navigationbuttonbox navigationboxright'}>
               <div className={this.state.navigation ? 'navigationbutton' : 'navigationbutton navigationbutton1'} />
               <div className={this.state.navigation ? 'navigationbutton' : 'navigationbutton navigationbutton2'} />
             </div>
           </div>
+          
           <div className='white-box white-box-two'>
             <div className='navigationbutton nav-one' />
             <div className='navigationbuttonbox login login-one'><div className=''>Login</div></div>
@@ -49,6 +51,7 @@ class App extends Component {
             <div className='navigationbuttonbox login'><div className='login-three'>Login</div></div>
             <div className='navigationbutton nav-four' />
           </div>
+
           <div className='white-box body' >
             <div className='favorite' onClick={() => this.favorite()} >
               <div className={this.state.favorite ? 'unsquare' : 'square'} />
@@ -64,6 +67,7 @@ class App extends Component {
               Aliquam gravida dolor in leo dapibus vehicula. Aliquam scelerisque massa eget elit sollicitudin vestibulum. Donec id hendrerit orci. Ut nibh mauris, lacinia vitae faucibus at, malesuada a augue. Morbi vulputate consectetur varius. Sed sodales auctor elit. Cras vehicula, diam vulputate tempus fringilla, nisl neque fringilla eros, at commodo arcu lorem ac ligula. Nullam cursus risus diam, sed egestas nunc interdum a. Nullam quis odio eleifend, maximus leo dictum, bibendum urna. Praesent quis pellentesque velit, eu feugiat augue. Suspendisse ut justo magna. Cras a tellus a libero suscipit accumsan. Proin non dolor nec nisi lobortis semper ac vitae magna. Phasellus vulputate, felis ut ullamcorper rutrum, mauris mi pellentesque dolor, in tincidunt odio enim vitae erat. Vestibulum eget pretium purus, id cursus felis.</p>
           </div>
         </div>
+
         <div className='navigationwrapper navwrap'>
           <div className='navigationbar'>
             <div className='navbutton' >Login</div>
@@ -79,7 +83,9 @@ class App extends Component {
             <div className='navbut' ><div className='circlewrapper' ><div className='circle' /></div>Login</div>
           </div>
         </div>
+
         <div className='navigationshadow' />
+
       </div>
     );
   }
